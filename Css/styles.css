@@ -1,0 +1,138 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.calculator {
+  width: 500px;
+  height: 80vh;
+  margin: auto;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(6, 90px);
+  margin-top: 4rem;
+}
+
+.result {
+  grid-column: span 4;
+  text-align: end;
+  padding-right: 3rem;
+  font-size: 5rem;
+  height: 200px;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  /* width: 50px;
+  height: 50px; */
+  outline: none;
+  border: 0;
+  border-radius: 100%;
+  font-size: 4rem;
+  font-weight: bold;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+.btn-gray {
+  background: rgba(167, 167, 167, 255);
+  color: #040404;
+}
+
+.btn-black {
+  background: rgba(51, 51, 51, 255);
+  color: #fcfcfc;
+}
+
+.btn-gold {
+  background: #fe9500;
+  color: #f4fffc;
+}
+.btn-zero {
+  grid-column: span 2;
+  border-radius: 50px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: start;
+  padding-left: 3rem;
+  border: 0;
+}
+
+.btn-equal {
+  background: #0ce;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    width: 350px;
+    height: 80vh;
+    padding: 1rem 2rem;
+    margin: auto;
+  }
+  .calculator-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(6, 70px);
+    grid-template-columns: repeat(4, 70px);
+    grid-row-gap: 2rem;
+    grid-column-gap: 1.4rem;
+    /* margin-left: 1rem; */
+  }
+
+  .result {
+    grid-row: 1;
+    margin-bottom: 5rem;
+
+    padding-right: 2.1rem;
+    font-size: 4.5rem;
+  }
+
+  .btn {
+    font-size: 3rem;
+  }
+
+  .btn-zero {
+    font-size: 3.5rem;
+  }
+  footer {
+    margin: 3rem 0 0 0;
+  }
+  footer p {
+    padding-right: 0;
+    padding-left: 5rem;
+    text-align: center;
+  }
+  footer span {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  margin: 5rem 0 0 0;
+  height: 25px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: rgb(80, 80, 80);
+
+  padding-right: 10rem;
+}
+
+footer span {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
