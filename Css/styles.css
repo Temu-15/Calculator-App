@@ -5,6 +5,7 @@ body {
   background: #000;
   color: #fff;
   text-align: center;
+  overflow-x:none;
 }
 
 .calculator {
@@ -84,11 +85,11 @@ body {
   .calculator-grid {
    margin-top: 5rem;
     display: grid;
-    grid-template-rows: repeat(6, 77px);
-    grid-template-columns: repeat(4, 77px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-columns: repeat(4, 80px);
     grid-row-gap: 2rem;
     grid-column-gap: 1.4rem;
-    margin-left: 1.5rem;
+
   }
 
   .result {
