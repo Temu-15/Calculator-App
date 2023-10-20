@@ -14,7 +14,7 @@ numbers.forEach((item) => {
 let clear = document.querySelector(".btn-clear");
 clear.addEventListener("click", function () {
   result = "";
-  document.querySelector(".result").textContent = 0;
+  document.querySelector(".result").textContent = '0';
 });
 
 // negative click event handler
