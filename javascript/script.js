@@ -20,17 +20,19 @@ clear.addEventListener("click", function () {
 // negative click event handler
 let negative = document.querySelector(".btn-negative");
 negative.addEventListener("click", function () {
-  let negative = "-";
-  result = negative.concat(result);
+ let negative = "-";
+  result = eval(negative.concat(result));
   document.querySelector(".result").textContent = result;
+  result = result.toString();
 });
 
 // Percent click event handler
 let percent = document.querySelector(".btn-percent");
 percent.addEventListener("click", function (event) {
-  let percentValue = event.target.textContent;
-  result = result.concat(percentValue);
+  let percentageValue = eval(result * 0.01);
+  result = percentageValue;
   document.querySelector(".result").textContent = result;
+  result = result.toString();
 });
 
 // Operator buttons click handler
